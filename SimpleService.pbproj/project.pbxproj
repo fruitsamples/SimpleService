@@ -1,0 +1,331 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 39;
+	objects = {
+		0182ADA0001CB65311CA0C5D = {
+			buildRules = (
+			);
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OPTIMIZATION_CFLAGS = "-O0";
+				ZERO_LINK = YES;
+			};
+			isa = PBXBuildStyle;
+			name = Development;
+		};
+		0182ADA1001CB65311CA0C5D = {
+			buildRules = (
+			);
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				ZERO_LINK = NO;
+			};
+			isa = PBXBuildStyle;
+			name = Deployment;
+		};
+//010
+//011
+//012
+//013
+//014
+//030
+//031
+//032
+//033
+//034
+		036354DEFEEE2D177F000001 = {
+			buildStyles = (
+				0182ADA0001CB65311CA0C5D,
+				0182ADA1001CB65311CA0C5D,
+			);
+			hasScannedForEncodings = 1;
+			isa = PBXProject;
+			mainGroup = 036354DFFEEE2D177F000001;
+			productRefGroup = 036354E0FEEE2D177F000001;
+			projectDirPath = "";
+			targets = (
+				7372159A049A927B00C919A3,
+			);
+		};
+		036354DFFEEE2D177F000001 = {
+			children = (
+				036354EFFEEE2D177F000001,
+				036354E0FEEE2D177F000001,
+				036354E2FEEE2D177F000001,
+				036354E4FEEE2D177F000001,
+				036354E6FEEE2D177F000001,
+				036354F0FEEE2D177F000001,
+				737215A7049A927B00C919A3,
+			);
+			isa = PBXGroup;
+			name = SimpleService;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		036354E0FEEE2D177F000001 = {
+			children = (
+				737215A8049A927B00C919A3,
+			);
+			isa = PBXGroup;
+			name = Products;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		036354E2FEEE2D177F000001 = {
+			children = (
+				036354E3FEEE2D177F000001,
+			);
+			isa = PBXGroup;
+			name = Classes;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		036354E3FEEE2D177F000001 = {
+			expectedFileType = sourcecode.c.objc;
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			path = ServiceTest.m;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		036354E4FEEE2D177F000001 = {
+			children = (
+				036354E5FEEE2D177F000001,
+				73721598049A926C00C919A3,
+			);
+			isa = PBXGroup;
+			name = Headers;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		036354E5FEEE2D177F000001 = {
+			expectedFileType = sourcecode.c.h;
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			path = ServiceTest.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		036354E6FEEE2D177F000001 = {
+			children = (
+				036354E7FEEE2D177F000001,
+			);
+			isa = PBXGroup;
+			name = "Other Sources";
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		036354E7FEEE2D177F000001 = {
+			expectedFileType = sourcecode.c.objc;
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			path = SimpleService_main.m;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		036354EFFEEE2D177F000001 = {
+			expectedFileType = text.rtf;
+			isa = PBXFileReference;
+			path = README.rtf;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		036354F0FEEE2D177F000001 = {
+			children = (
+				036354F1FEEE2D177F000001,
+				036354F2FEEE2D177F000001,
+			);
+			isa = PBXGroup;
+			name = "External Frameworks and Libraries";
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		036354F1FEEE2D177F000001 = {
+			expectedFileType = wrapper.framework;
+			fallbackIsa = PBXFileReference;
+			isa = PBXFrameworkReference;
+			name = AppKit.framework;
+			path = /System/Library/Frameworks/AppKit.framework;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		036354F2FEEE2D177F000001 = {
+			expectedFileType = wrapper.framework;
+			fallbackIsa = PBXFileReference;
+			isa = PBXFrameworkReference;
+			name = Foundation.framework;
+			path = /System/Library/Frameworks/Foundation.framework;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+//030
+//031
+//032
+//033
+//034
+//730
+//731
+//732
+//733
+//734
+		734E636A049E69EF00C919A3 = {
+			compilerSpec = com.apple.compilers.gcc.3_3;
+			fileType = sourcecode.c;
+			isEditable = 1;
+			isa = PBXBuildRule;
+			outputFiles = (
+			);
+		};
+		73721598049A926C00C919A3 = {
+			expectedFileType = sourcecode.c.h;
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			path = Prefix.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		7372159A049A927B00C919A3 = {
+			buildPhases = (
+				7372159B049A927B00C919A3,
+				7372159E049A927B00C919A3,
+				7372159F049A927B00C919A3,
+				737215A2049A927B00C919A3,
+				737215A5049A927B00C919A3,
+			);
+			buildRules = (
+				734E636A049E69EF00C919A3,
+			);
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Prefix.h;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				GCC_WARN_UNKNOWN_PRAGMAS = NO;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "Info-SimpleService__Upgraded_.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Services";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = SimpleService;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = "-Wmost";
+				WRAPPER_EXTENSION = app;
+			};
+			dependencies = (
+			);
+			isa = PBXNativeTarget;
+			name = SimpleService;
+			productInstallPath = "$(LOCAL_LIBRARY_DIR)/Services";
+			productName = SimpleService;
+			productReference = 737215A8049A927B00C919A3;
+			productType = "com.apple.product-type.application";
+		};
+		7372159B049A927B00C919A3 = {
+			buildActionMask = 2147483647;
+			files = (
+				7372159C049A927B00C919A3,
+				7372159D049A927B00C919A3,
+			);
+			isa = PBXHeadersBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7372159C049A927B00C919A3 = {
+			fileRef = 036354E5FEEE2D177F000001;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		7372159D049A927B00C919A3 = {
+			fileRef = 73721598049A926C00C919A3;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		7372159E049A927B00C919A3 = {
+			buildActionMask = 2147483647;
+			files = (
+			);
+			isa = PBXResourcesBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7372159F049A927B00C919A3 = {
+			buildActionMask = 2147483647;
+			files = (
+				737215A0049A927B00C919A3,
+				737215A1049A927B00C919A3,
+			);
+			isa = PBXSourcesBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		737215A0049A927B00C919A3 = {
+			fileRef = 036354E3FEEE2D177F000001;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+				);
+			};
+		};
+		737215A1049A927B00C919A3 = {
+			fileRef = 036354E7FEEE2D177F000001;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+				);
+			};
+		};
+		737215A2049A927B00C919A3 = {
+			buildActionMask = 2147483647;
+			files = (
+				737215A3049A927B00C919A3,
+				737215A4049A927B00C919A3,
+			);
+			isa = PBXFrameworksBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		737215A3049A927B00C919A3 = {
+			fileRef = 036354F1FEEE2D177F000001;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		737215A4049A927B00C919A3 = {
+			fileRef = 036354F2FEEE2D177F000001;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		737215A5049A927B00C919A3 = {
+			buildActionMask = 2147483647;
+			files = (
+			);
+			isa = PBXRezBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		737215A7049A927B00C919A3 = {
+			expectedFileType = text.plist;
+			isa = PBXFileReference;
+			path = "Info-SimpleService__Upgraded_.plist";
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		737215A8049A927B00C919A3 = {
+			expectedFileType = wrapper.application;
+			includeInIndex = 0;
+			isa = PBXFileReference;
+			path = SimpleService.app;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+	};
+	rootObject = 036354DEFEEE2D177F000001;
+}

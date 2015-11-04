@@ -26,31 +26,6 @@
 		};
 /* End PBXBuildRule section */
 
-/* Begin PBXBuildStyle section */
-		0182ADA0001CB65311CA0C5D /* Development */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				OPTIMIZATION_CFLAGS = "-O0";
-				ZERO_LINK = YES;
-			};
-			name = Development;
-		};
-		0182ADA1001CB65311CA0C5D /* Deployment */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = YES;
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
-				ZERO_LINK = NO;
-			};
-			name = Deployment;
-		};
-/* End PBXBuildStyle section */
-
 /* Begin PBXFileReference section */
 		036354E3FEEE2D177F000001 /* ServiceTest.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = ServiceTest.m; sourceTree = "<group>"; };
 		036354E5FEEE2D177F000001 /* ServiceTest.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ServiceTest.h; sourceTree = "<group>"; };
@@ -60,7 +35,7 @@
 		036354F2FEEE2D177F000001 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		73721598049A926C00C919A3 /* Prefix.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = Prefix.h; sourceTree = "<group>"; };
 		737215A7049A927B00C919A3 /* Info-SimpleService.plist */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Info-SimpleService.plist"; sourceTree = "<group>"; };
-		737215A8049A927B00C919A3 /* SimpleService.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleService.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		737215A8049A927B00C919A3 /* SimpleService.service */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleService.service; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,7 +68,7 @@
 		036354E0FEEE2D177F000001 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				737215A8049A927B00C919A3 /* SimpleService.app */,
+				737215A8049A927B00C919A3 /* SimpleService.service */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -160,30 +135,12 @@
 			buildRules = (
 				734E636A049E69EF00C919A3 /* PBXBuildRule */,
 			);
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = "";
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = Prefix.h;
-				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
-				GCC_WARN_UNKNOWN_PRAGMAS = NO;
-				HEADER_SEARCH_PATHS = "";
-				INFOPLIST_FILE = "Info-SimpleService.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Services";
-				LIBRARY_SEARCH_PATHS = "";
-				OTHER_CFLAGS = "";
-				OTHER_LDFLAGS = "";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = SimpleService;
-				SECTORDER_FLAGS = "";
-				WARNING_CFLAGS = "-Wmost";
-				WRAPPER_EXTENSION = app;
-			};
 			dependencies = (
 			);
 			name = SimpleService;
 			productInstallPath = "$(LOCAL_LIBRARY_DIR)/Services";
 			productName = SimpleService;
-			productReference = 737215A8049A927B00C919A3 /* SimpleService.app */;
+			productReference = 737215A8049A927B00C919A3 /* SimpleService.service */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -192,16 +149,13 @@
 		036354DEFEEE2D177F000001 /* Project object */ = {
 			isa = PBXProject;
 			buildConfigurationList = B69BDEDB08A2ECB4008AC9B5 /* Build configuration list for PBXProject "SimpleService" */;
-			buildSettings = {
-			};
-			buildStyles = (
-				0182ADA0001CB65311CA0C5D /* Development */,
-				0182ADA1001CB65311CA0C5D /* Deployment */,
-			);
+			compatibilityVersion = "Xcode 2.4";
 			hasScannedForEncodings = 1;
 			mainGroup = 036354DFFEEE2D177F000001 /* SimpleService */;
 			productRefGroup = 036354E0FEEE2D177F000001 /* Products */;
 			projectDirPath = "";
+			projectRoot = "";
+			shouldCheckCompatibility = 1;
 			targets = (
 				7372159A049A927B00C919A3 /* SimpleService */,
 			);
@@ -265,7 +219,7 @@
 				PRODUCT_NAME = SimpleService;
 				SECTORDER_FLAGS = "";
 				WARNING_CFLAGS = "-Wmost";
-				WRAPPER_EXTENSION = app;
+				WRAPPER_EXTENSION = service;
 				ZERO_LINK = YES;
 			};
 			name = Development;
@@ -290,7 +244,7 @@
 				PRODUCT_NAME = SimpleService;
 				SECTORDER_FLAGS = "";
 				WARNING_CFLAGS = "-Wmost";
-				WRAPPER_EXTENSION = app;
+				WRAPPER_EXTENSION = service;
 				ZERO_LINK = NO;
 			};
 			name = Deployment;
@@ -313,25 +267,31 @@
 				PRODUCT_NAME = SimpleService;
 				SECTORDER_FLAGS = "";
 				WARNING_CFLAGS = "-Wmost";
-				WRAPPER_EXTENSION = app;
+				WRAPPER_EXTENSION = service;
 			};
 			name = Default;
 		};
 		B69BDEDC08A2ECB4008AC9B5 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				SDKROOT = /Developer/SDKs/MacOSX10.5.sdk;
 			};
 			name = Development;
 		};
 		B69BDEDD08A2ECB4008AC9B5 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				SDKROOT = /Developer/SDKs/MacOSX10.5.sdk;
 			};
 			name = Deployment;
 		};
 		B69BDEDE08A2ECB4008AC9B5 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				SDKROOT = /Developer/SDKs/MacOSX10.5.sdk;
 			};
 			name = Default;
 		};
